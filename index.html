@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website | Architectural Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navigation">
+            <a class="brand" href="index.html">NORTH COUNTRY CONSTRUCTION</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">CUSTOM HOMES · QUALITY · CRAFTSMANSHIP</p>
+            <h1>Custom Homes. Thoughtfully Built.</h1>
+            <p>Explore completed homes showcasing thoughtful design,
+                quality materials, and the details that make each home unique.</p>
+            <a class="cta" href="#projects">Explore the projects</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Company philosophy: introduce NCC's values before the featured projects. -->
+        <section id="philosophy" class="philosophy-section">
+            <p class="eyebrow">WHO WE ARE</p>
+            <h2>Built on Honesty and Integrity</h2>
+
+            <p>
+                North Country Construction is locally owned and operated, and we
+                believe in doing business with honesty, integrity, and respect.
+                We treat every home as if it were our own and tailor our services
+                to the needs of each project.
+            </p>
+
+            <p>
+                We specialize in custom homes, remodels, and additions, while
+                offering the experience and expertise to tackle a wide range of
+                other construction and home improvement projects. We take pride
+                in the quality of our workmanship and our commitment to delivering
+                outstanding results.
+            </p>
+
+            <p>
+                Our goal is to build lasting relationships with our clients
+                through clear communication, dependable service, and quality work.
+                Your trust matters to us, and we strive to make every project one
+                you can be proud of.
+            </p>
+        </section>
+
+        <section id="projects" class="projects-section">
+
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Featured Projects</h2>
+            <p class="section-intro">
+                A few examples of design, materials, and craftsmanship.
+            </p>
+            <div class="project-grid">
+
+                <!-- PROJECT-CARDS-START -->
+                <a href="craftsman-retreat.html" class="project-link">
+                    <article class="project-card">
+                        <img src="images/craftsman-retreat/exterior.jpg"
+                             alt="The Craftsman Retreat">
+                        <div class="project-info">
+                            <h3>The Craftsman Retreat</h3>
+                            <p>A welcoming custom home combining traditional craftsmanship with comfortable, modern living.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="dana-ave.html" class="project-link">
+                    <article class="project-card">
+                        <img src="images/dana-ave/exterior.jpg"
+                             alt="Dana Avenue">
+                        <div class="project-info">
+                            <h3>Dana Avenue</h3>
+                            <p>A welcoming custom home combining traditional craftsmanship with comfortable, modern living.</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="modern-residence.html" class="project-link">
+                    <article class="project-card">
+                        <img src="images/modern-residence/exterior.jpg"
+                             alt="The Modern Residence">
+                        <div class="project-info">
+                            <h3>The Modern Residence</h3>
+                            <p>A custom home featuring clean lines, natural materials, and thoughtfully designed living spaces.</p>
+                        </div>
+                    </article>
+                </a>
+                <!-- PROJECT-CARDS-END -->
+
+            </div>
+
+        </section>
+
+        <!-- Contact section: make it easy for visitors to reach NCC directly. -->
+        <section id="contact" class="contact-section">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Contact North Country Construction</h2>
+            <p>
+                Have a question about a custom home, remodel, or addition?
+                We'd be happy to hear from you.
+            </p>
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:+13074612896">(307) 461-2896</a>
+            </p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:NCCinc06@gmail.com">NCCinc06@gmail.com</a>
+            </p>
+        </section>
+
+        <!-- Quote request section -->
+        <section id="quote" class="quote-section">
+            <div class="quote-content">
+                <p class="eyebrow">START A CONVERSATION</p>
+
+                <h2>Tell Us About Your New Home</h2>
+                <p>
+                    Every custom home starts with an idea. Tell us a little about yours, and let's explore how we can
+                    bring your vision to life.
+                </p>
+
+                <form id="quoteForm">
+                    <div class="form-field">
+                        <label for="customerName">Your Name *</label>
+                        <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="customerEmail">Email Address *</label>
+                        <input type="email" id="customerEmail" name="customerEmail" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="customerPhone">Phone Number</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" autocomplete="tel">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="buildLocation">Where Are You Planning to Build?</label>
+                        <input type="text" id="buildLocation" name="buildLocation" placeholder="City or general area">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="projectDescription">
+                            Tell Us About Your Home
+                        </label>
+                        <textarea id="projectDescription" name="projectDescription" rows="5"
+                            placeholder="Describe your ideas, preferred features, or questions."></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="timeframe">When Are You Hoping to Build?</label>
+                        <select id="timeframe" name="timeframe">
+                            <option value="">Select a timeframe</option>
+                            <option value="Within 6 months">Within 6 months</option>
+                            <option value="6 to 12 months">6 to 12 months</option>
+                            <option value="1 to 2 years">1 to 2 years</option>
+                            <option value="Just exploring">Just exploring</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="referralSource">
+                            How did you hear about North Country Construction?
+                        </label>
+                        <select id="referralSource" name="referralSource">
+                            <option value="">Select an answer (optional)</option>
+                            <option value="Friend or family">Friend or family</option>
+                            <option value="Google or online search">Google or online search</option>
+                            <option value="Social media">Social media</option>
+                            <option value="Saw an NCC project">Saw an NCC project</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Additional project information is optional. -->
+                    <div class="optional-project-details">
+
+                        <h3>More About Your Project (Optional)</h3>
+
+                        <p class="optional-intro">
+                            If you know some of these details, they can help us prepare
+                            for our conversation. It's perfectly fine to leave any or
+                            all of these questions unanswered.
+                        </p>
+
+                        <div class="form-field">
+                            <label for="buildType">What type of project are you considering?</label>
+                            <select id="buildType" name="buildType">
+                                <option value="">Select a project type</option>
+                                <option value="Custom home">Custom home</option>
+                                <option value="Semi-custom home">Semi-custom home</option>
+                                <option value="Home addition">Home addition</option>
+                                <option value="Other">Other</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="propertyStatus">Have you selected or purchased a property?</label>
+                            <select id="propertyStatus" name="propertyStatus">
+                                <option value="">Select an answer</option>
+                                <option value="Already own the property">I own the property</option>
+                                <option value="Property selected, not purchased">I've selected a property</option>
+                                <option value="Looking for property">I'm looking for property</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="siteDetails">Anything you know about the property or site?</label>
+                            <textarea id="siteDetails" name="siteDetails" rows="3"
+                                placeholder="For example, lot location, terrain, or access"></textarea>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="utilities">Do you know whether utilities are available?</label>
+                            <select id="utilities" name="utilities">
+                                <option value="">Select an answer</option>
+                                <option value="Utilities available">Utilities are available</option>
+                                <option value="Well or septic may be needed">Well or septic may be needed</option>
+                                <option value="Some utilities, details unknown">Some utilities are available</option>
+                                <option value="Not sure">Not sure</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="budget">Approximate construction budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Prefer not to specify</option>
+                                <option value="Under $300,000">Under $300,000</option>
+                                <option value="$300,000–$499,999">$300,000–$499,999</option>
+                                <option value="$500,000–$749,999">$500,000–$749,999</option>
+                                <option value="$750,000–$999,999">$750,000–$999,999</option>
+                                <option value="$1,000,000 or more">$1,000,000 or more</option>
+                                <option value="Still exploring">Still exploring</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="financing">Where are you with financing?</label>
+                            <select id="financing" name="financing">
+                                <option value="">Prefer not to specify</option>
+                                <option value="Cash or funds available">Cash or funds available</option>
+                                <option value="Financing secured">Financing secured</option>
+                                <option value="Need financing">I may need financing</option>
+                                <option value="Would appreciate lender recommendations">I'd appreciate lender
+                                    recommendations</option>
+                                <option value="Still exploring">Still exploring</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="planStatus">Do you have building plans?</label>
+                            <select id="planStatus" name="planStatus">
+                                <option value="">Select an answer</option>
+                                <option value="Plans ready">Yes, plans are ready</option>
+                                <option value="Plans in progress">Plans are in progress</option>
+                                <option value="Need plans">No, I need help with plans</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                            <p class="field-note">
+                                If you already have plans, you can attach them to your
+                                email to NCC after downloading your quote request.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" id="quoteButton">
+                        Generate a Quote Request
+                    </button>
+
+                    <p id="quoteMessage">
+                        When you click <strong>Generate a Quote Request</strong>, a PDF will be downloaded
+                        to your device, and your default email application will open with a message
+                        addressed to North Country Construction.
+                    </p>
+
+                    <p>
+                        <strong>To submit your request:</strong>
+                    </p>
+                    <ol>
+                        <li>Attach the downloaded PDF to the email.</li>
+                        <li>Review the message and click <strong>Send</strong>.</li>
+                    </ol>
+
+                    <p>
+                        Your request is not sent until you send the email.
+                    </p>
+
+                    <p>
+                        If your email application does not open, you can email North Country
+                        Construction directly at
+                        <a href="mailto:NCCinc06@gmail.com">NCCinc06@gmail.com</a>.
+                        Attach the downloaded PDF to your message.
+                    </p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h2>Let's Talk About Your New Home</h2>
+            <p>
+                North Country Construction builds custom homes
+                in Sheridan, Wyoming, and surrounding communities.
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:+13074612896">(307) 461-2896</a>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:NCCinc06@gmail.com">
+                    NCCinc06@gmail.com
+                </a>
+            </p>
+
+            <p class="copyright">
+                &copy; 2026 North Country Construction
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+
+</html>
